@@ -104,6 +104,10 @@
     <version>1.0.2</version>
 </dependency>
 </dependencies>
+<properties>
+    		<maven.compiler.source>1.8</maven.compiler.source>
+    		<maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 <build>	
     <plugins>
    
@@ -112,12 +116,8 @@
       <artifactId>maven-surefire-plugin</artifactId>
       <version>3.2.5</version> 
       <configuration> 
-		  <properties>
-    		<maven.compiler.source>1.8</maven.compiler.source>
-    		<maven.compiler.target>1.8</maven.compiler.target>
-		</properties>
         <suiteXmlFiles>
-           <suiteXmlFile>seleniumazure.testng.xml</suiteXmlFile>
+           <suiteXmlFile>seleniumazure_test.testng.xml</suiteXmlFile>
         </suiteXmlFiles>
          <encoding>UTF-8</encoding>
       </configuration>
